@@ -1,0 +1,2 @@
+
+Parque{id=0, id_TipoParque=null, ocupacaoLugaresEletricos=null, ocupacaoLugaresNormais=null, maxLugaresEletricos=null, maxLugaresNormais=null}

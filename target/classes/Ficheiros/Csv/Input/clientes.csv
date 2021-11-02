@@ -1,0 +1,33 @@
+#nome - nome do cliente
+#email
+#nif
+#password
+#rua
+#longitude
+#latitude
+#altitude
+#numero_cartao
+Centro Comercial Plaza;cliente1@farmacias.pt;999999999;cliente1;Centro Comercial Plaza; 41.2333905; -8.623724; 110.0;5277872
+Centro Comercial Stop;cliente2@farmacias.pt;888888888;cliente2;Centro Comercial Stop; 41.1460067; -8.597118; 98.0;5277978
+Centro Comercial de Cedofeita;cliente3@farmacias.pt;777777777;cliente3;Centro Comercial de Cedofeita; 41.15455; -8.6213359; 79.0;5278084
+Shopping Brasilia - Associaco Comerciantes;cliente4@farmacias.pt;666666666;cliente4;Shopping Brasilia - Associaco Comerciantes; 41.1575628; -8.6300257; 89.0 ;527819
+Centro Comercial do Carvalhido;cliente5@farmacias.pt;555555555;cliente5;Centro Comercial do Carvalhido; 41.167775; -8.6323613; 91.0 ;5278296
+Centro Comercial New City;cliente4@farmacias.pt;444444444;cliente6;Centro Comercial New City; 41.1823475; -8.6944831; 10.0;5278402
+Centro Comercial Parque;cliente5@farmacias.pt;333333333;cliente7;Centro Comercial Parque; 41.1845917; -8.6843009; 27.0;5278508
+Traditional Shopping Street;cliente4@farmacias.pt;222222222;cliente8;Traditional Shopping Street; 41.1534775; -8.6069379; 116.0;5278614
+MAR Shopping Matosinhos;cliente5@farmacias.pt;111111111;cliente9;MAR Shopping Matosinhos; 41.2090041; -8.6895187; 42.0;527872
+NorteShopping;cliente4@farmacias.pt;123456543;cliente10;NorteShopping; 41.1808164; -8.656765; 84.0;5278826
+Alameda Shop Spot;cliente5@farmacias.pt;135801975;cliente11;Alameda Shop Spot; 41.1637391; -8.586373; 138.0;5278932
+Shop;cliente4@farmacias.pt;148147407;cliente12;Shop; 41.1479441; -8.6180205; 81.0;5279038
+Espiral Colossal;cliente5@farmacias.pt;160492839;cliente13;Espiral Colossal; 41.1436585; -8.6055704; 83.0;5279144
+Praceta Salvador Caetano;cliente4@farmacias.pt;172838271;cliente14;Praceta Salvador Caetano; 41.1330849; -8.6103613; 62.0;527925
+ArrabidaShopping;cliente5@farmacias.pt;185183703;cliente15;ArrabidaShopping; 41.1414625; -8.6386422; 79.0;5279356
+Post Office Valongo;cliente4@farmacias.pt;197529135;cliente16;Post Office Valongo; 41.1899926; -8.4997751; 143.0;5279462
+Centro de Distribuicao dos Correios de Ermesinde;cliente5@farmacias.pt;209874567;cliente17;Centro de Distribuicao dos Correios de Ermesinde; 41.2026113; -8.5471559; 125.0;5279568
+Posto Correios Forno;cliente4@farmacias.pt;222219999;cliente18;Posto Correios Forno; 41.1925968; -8.5780822; 152.0;5279674
+Posto de Correios de Conde Ferreira;cliente5@farmacias.pt;234565431;cliente19;Posto de Correios de Conde Ferreira; 41.1711857; -8.5903702; 147.0;527978
+CTT;cliente4@farmacias.pt;246910863;cliente20;CTT; 41.1714565; -8.6150455; 129.0;5279886
+Correios CTT Campo Alegre;cliente5@farmacias.pt;259256295;cliente21;Correios CTT Campo Alegre; 41.1527558; -8.6332423; 77.0;5279992
+Pereiro Post Office;cliente4@farmacias.pt;271601727;cliente22;Pereiro Post Office; 41.1724915; -8.6571258; 68.0;5280098
+Tecofix Porto;cliente5@farmacias.pt;283947159;cliente23;Tecofix Porto; 41.1539359; -8.5492315; 78.0;5280204
+FISHISCO Pesca;cliente4@farmacias.pt;296292591;cliente24;FISHISCO Pesca; 41.1442816; -8.5774104; 6.0;528031

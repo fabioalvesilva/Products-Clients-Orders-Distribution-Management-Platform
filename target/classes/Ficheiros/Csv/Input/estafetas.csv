@@ -1,0 +1,11 @@
+#nome - nome estafeta
+#email - email do estafeta
+#nif - nif do estafeta
+#niss - niss do estafeta
+#password - password da conta do estafeta
+#id_farmacia - id da farmacia para a qual traballho o estafeta
+Estafeta 1;estafeta1@farmacias.pt;111111111;222222222;estafeta1;1
+Estafeta 2;estafeta2@farmacias.pt;333333333;444444444;estafeta2;2
+Estafeta 3;estafeta3@farmacias.pt;555555555;666666666;estafeta3;1
+Carlos Miguel;rmarinho.pt@gmail.com;255234435;234565783;estafeta4;1
+Balbina;rmarinho.pt@gmail.com;255265435;234567834;estafeta5;1

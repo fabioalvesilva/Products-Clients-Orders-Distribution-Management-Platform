@@ -1,0 +1,2 @@
+
+Utilizador{nome=null, email=null, nif=null, password=null}

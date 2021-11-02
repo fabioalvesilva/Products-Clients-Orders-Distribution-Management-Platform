@@ -1,0 +1,1615 @@
+
+-------
+21/17/2021 23:17:25
+-------
+
+Error executing 'DROP TABLE administrador CASCADE CONSTRAINTS ' (line 2): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE artigo CASCADE CONSTRAINTS ' (line 3): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE cliente CASCADE CONSTRAINTS ' (line 4): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE conta CASCADE CONSTRAINTS ' (line 5): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE drone CASCADE CONSTRAINTS ' (line 6): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE encomenda CASCADE CONSTRAINTS ' (line 7): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE encomendaInterna CASCADE CONSTRAINTS ' (line 8): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE entrega CASCADE CONSTRAINTS ' (line 9): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE estado_encomenda CASCADE CONSTRAINTS ' (line 10): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE estado_veiculo CASCADE CONSTRAINTS ' (line 11): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE estafeta CASCADE CONSTRAINTS ' (line 12): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE farmacia CASCADE CONSTRAINTS ' (line 13): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE farmacia_parque CASCADE CONSTRAINTS ' (line 14): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE fatura CASCADE CONSTRAINTS ' (line 15): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE funcionario CASCADE CONSTRAINTS ' (line 16): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE guiaTransporte CASCADE CONSTRAINTS ' (line 17): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE localidade CASCADE CONSTRAINTS ' (line 18): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE lugar_estacionamento CASCADE CONSTRAINTS ' (line 19): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE modelo_drone CASCADE CONSTRAINTS ' (line 20): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE modelo_scooter CASCADE CONSTRAINTS ' (line 21): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE modo_pagamento CASCADE CONSTRAINTS ' (line 22): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE notaEncomenda CASCADE CONSTRAINTS ' (line 23): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE pagamento CASCADE CONSTRAINTS ' (line 24): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE parque CASCADE CONSTRAINTS ' (line 25): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_artigo_farmacia CASCADE CONSTRAINTS ' (line 26): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_encomenda_artigo CASCADE CONSTRAINTS ' (line 27): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_encomenda_conta CASCADE CONSTRAINTS ' (line 28): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_encomendaInterna_artigo CASCADE CONSTRAINTS ' (line 29): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_estafeta_veiculo_entrega_encomenda CASCADE CONSTRAINTS ' (line 30): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_farmacia_encomendaInterna CASCADE CONSTRAINTS ' (line 31): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_funcionario_farmacia CASCADE CONSTRAINTS ' (line 32): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_veiculo_lugarEstacionamento CASCADE CONSTRAINTS ' (line 33): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE scooter CASCADE CONSTRAINTS ' (line 34): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE spotCarregamento CASCADE CONSTRAINTS ' (line 35): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE tipo_bateria CASCADE CONSTRAINTS ' (line 36): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE tipo_disponibilidade CASCADE CONSTRAINTS ' (line 37): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE tipo_Estacionamento CASCADE CONSTRAINTS ' (line 38): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE tipo_funcionario CASCADE CONSTRAINTS ' (line 39): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE tipo_mochila CASCADE CONSTRAINTS ' (line 40): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE tipo_parque CASCADE CONSTRAINTS ' (line 41): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE tipo_veiculo CASCADE CONSTRAINTS ' (line 42): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE veÃ­culo CASCADE CONSTRAINTS ' (line 43): ORA-00911: carácter inválido
+
+
+-------
+21/17/2021 23:17:28
+-------
+
+Error executing 'CREATE TABLE veÃ­culo (id_veiculo number(10) GENERATED AS IDENTITY, id_tipoVeiculo number(10) NOT NULL, id_farmacia number(10) NOT NULL, PRIMARY KEY (id_veiculo)) ' (line 44): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE veÃ­culo ADD CONSTRAINT FKveÃ­culo112983 FOREIGN KEY (id_farmacia) REFERENCES farmacia (id_farmacia) ' (line 57): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE r_estafeta_veiculo_entrega_encomenda ADD CONSTRAINT FKr_estafeta672971 FOREIGN KEY (id_veiculo) REFERENCES veÃ­culo (id_veiculo) ' (line 63): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE scooter ADD CONSTRAINT FKscooter133522 FOREIGN KEY (id_scooter) REFERENCES veÃ­culo (id_veiculo) ' (line 64): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE drone ADD CONSTRAINT FKdrone45400 FOREIGN KEY (id_drone) REFERENCES veÃ­culo (id_veiculo) ' (line 65): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE r_veiculo_lugarEstacionamento ADD CONSTRAINT FKr_veiculo_346099 FOREIGN KEY (id_veiculo) REFERENCES veÃ­culo (id_veiculo) ' (line 66): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE veÃ­culo ADD CONSTRAINT FKveÃ­culo800903 FOREIGN KEY (id_tipoVeiculo) REFERENCES tipo_veiculo (id_tipoVeiculo) ' (line 67): ORA-00911: carácter inválido
+
+
+-------
+21/17/2021 23:17:34
+-------
+
+Error executing 'create FUNCTION fncValidarAdmin(p_email cliente.email%type) RETURN INTEGER
+AS
+    v_admin                NUMBER ' (line 3): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing '    v_tipoFuncionarioAdmin NUMBER ' (line 4): ORA-00900: instrução de SQL inválida
+
+Error executing '    excep_nenhumParametro EXCEPTION ' (line 6): ORA-00900: instrução de SQL inválida
+
+Error executing '    excep_emailDesconhecido EXCEPTION ' (line 7): ORA-00900: instrução de SQL inválida
+
+Error executing 'BEGIN
+    IF (p_email IS NOT NULL) THEN
+        SELECT Id_tipofuncionario
+        INTO v_tipoFuncionarioAdmin
+        FROM tipo_funcionario
+        WHERE UPPER(designacao) LIKE UPPER('administrador') ' (line 16): ORA-06550: linha 6, coluna 60:
+PLS-00103: Encontrado o símbolo "end-of-file" quando era esperado um dos seguintes:
+
+   ;
+
+Error executing '        SELECT funcionario.id_tipoFuncionario INTO v_admin FROM funcionario WHERE UPPER(email) = UPPER(p_email) ' (line 18): ORA-00904: "P_EMAIL": identificador inválido
+
+
+-------
+21/19/2021 23:19:08
+-------
+
+Error executing 'DROP TABLE veÃ­culo CASCADE CONSTRAINTS ' (line 43): ORA-00911: carácter inválido
+
+
+-------
+21/19/2021 23:19:12
+-------
+
+Error executing 'CREATE TABLE veÃ­culo (id_veiculo number(10) GENERATED AS IDENTITY, id_tipoVeiculo number(10) NOT NULL, id_farmacia number(10) NOT NULL, PRIMARY KEY (id_veiculo)) ' (line 44): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE veÃ­culo ADD CONSTRAINT FKveÃ­culo112983 FOREIGN KEY (id_farmacia) REFERENCES farmacia (id_farmacia) ' (line 57): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE r_estafeta_veiculo_entrega_encomenda ADD CONSTRAINT FKr_estafeta672971 FOREIGN KEY (id_veiculo) REFERENCES veÃ­culo (id_veiculo) ' (line 63): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE scooter ADD CONSTRAINT FKscooter133522 FOREIGN KEY (id_scooter) REFERENCES veÃ­culo (id_veiculo) ' (line 64): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE drone ADD CONSTRAINT FKdrone45400 FOREIGN KEY (id_drone) REFERENCES veÃ­culo (id_veiculo) ' (line 65): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE r_veiculo_lugarEstacionamento ADD CONSTRAINT FKr_veiculo_346099 FOREIGN KEY (id_veiculo) REFERENCES veÃ­culo (id_veiculo) ' (line 66): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE veÃ­culo ADD CONSTRAINT FKveÃ­culo800903 FOREIGN KEY (id_tipoVeiculo) REFERENCES tipo_veiculo (id_tipoVeiculo) ' (line 67): ORA-00911: carácter inválido
+
+
+-------
+21/19/2021 23:19:18
+-------
+
+Error executing 'create FUNCTION fncValidarAdmin(p_email cliente.email%type) RETURN INTEGER
+AS
+    v_admin                NUMBER ' (line 3): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing '    v_tipoFuncionarioAdmin NUMBER ' (line 4): ORA-00900: instrução de SQL inválida
+
+Error executing '    excep_nenhumParametro EXCEPTION ' (line 6): ORA-00900: instrução de SQL inválida
+
+Error executing '    excep_emailDesconhecido EXCEPTION ' (line 7): ORA-00900: instrução de SQL inválida
+
+Error executing 'BEGIN
+    IF (p_email IS NOT NULL) THEN
+        SELECT Id_tipofuncionario
+        INTO v_tipoFuncionarioAdmin
+        FROM tipo_funcionario
+        WHERE UPPER(designacao) LIKE UPPER('administrador') ' (line 16): ORA-06550: linha 6, coluna 60:
+PLS-00103: Encontrado o símbolo "end-of-file" quando era esperado um dos seguintes:
+
+   ;
+
+Error executing '        SELECT funcionario.id_tipoFuncionario INTO v_admin FROM funcionario WHERE UPPER(email) = UPPER(p_email) ' (line 18): ORA-00904: "P_EMAIL": identificador inválido
+
+
+-------
+21/21/2021 23:21:22
+-------
+
+Error executing 'DROP TABLE veÃ­culo CASCADE CONSTRAINTS ' (line 43): ORA-00911: carácter inválido
+
+
+-------
+21/21/2021 23:21:27
+-------
+
+Error executing 'ALTER TABLE veÃ­culo ADD CONSTRAINT FKveÃ­culo112983 FOREIGN KEY (id_farmacia) REFERENCES farmacia (id_farmacia) ' (line 57): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE r_estafeta_veiculo_entrega_encomenda ADD CONSTRAINT FKr_estafeta672971 FOREIGN KEY (id_veiculo) REFERENCES veÃ­culo (id_veiculo) ' (line 63): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE scooter ADD CONSTRAINT FKscooter133522 FOREIGN KEY (id_scooter) REFERENCES veÃ­culo (id_veiculo) ' (line 64): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE drone ADD CONSTRAINT FKdrone45400 FOREIGN KEY (id_drone) REFERENCES veÃ­culo (id_veiculo) ' (line 65): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE r_veiculo_lugarEstacionamento ADD CONSTRAINT FKr_veiculo_346099 FOREIGN KEY (id_veiculo) REFERENCES veÃ­culo (id_veiculo) ' (line 66): ORA-00911: carácter inválido
+
+Error executing 'ALTER TABLE veÃ­culo ADD CONSTRAINT FKveÃ­culo800903 FOREIGN KEY (id_tipoVeiculo) REFERENCES tipo_veiculo (id_tipoVeiculo) ' (line 67): ORA-00911: carácter inválido
+
+
+-------
+21/21/2021 23:21:34
+-------
+
+
+-------
+21/25/2021 23:25:03
+-------
+
+Error executing 'DROP TABLE veÃ­culo CASCADE CONSTRAINTS ' (line 43): ORA-00911: carácter inválido
+
+
+-------
+21/25/2021 23:25:20
+-------
+
+Error executing 'CREATE TABLE veiculo (id_veiculo number(10) GENERATED AS IDENTITY, id_tipoVeiculo number(10) NOT NULL, id_farmacia number(10) NOT NULL, PRIMARY KEY (id_veiculo)) ' (line 44): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+
+-------
+21/30/2021 23:30:58
+-------
+
+
+-------
+21/31/2021 23:31:05
+-------
+
+
+-------
+21/31/2021 23:31:14
+-------
+
+Error executing '    v_tipoFuncionarioAdmin NUMBER ' (line 4): ORA-00900: instrução de SQL inválida
+
+Error executing '    excep_nenhumParametro EXCEPTION ' (line 6): ORA-00900: instrução de SQL inválida
+
+Error executing '    excep_emailDesconhecido EXCEPTION ' (line 7): ORA-00900: instrução de SQL inválida
+
+Error executing 'BEGIN
+    IF (p_email IS NOT NULL) THEN
+        SELECT Id_tipofuncionario
+        INTO v_tipoFuncionarioAdmin
+        FROM tipo_funcionario
+        WHERE UPPER(designacao) LIKE UPPER('administrador') ' (line 16): ORA-06550: linha 6, coluna 60:
+PLS-00103: Encontrado o símbolo "end-of-file" quando era esperado um dos seguintes:
+
+   ;
+
+Error executing '        SELECT funcionario.id_tipoFuncionario INTO v_admin FROM funcionario WHERE UPPER(email) = UPPER(p_email) ' (line 18): ORA-00904: "P_EMAIL": identificador inválido
+
+
+-------
+21/33/2021 23:33:58
+-------
+
+
+-------
+21/34/2021 23:34:04
+-------
+
+
+-------
+21/34/2021 23:34:11
+-------
+
+
+-------
+21/42/2021 23:42:18
+-------
+
+
+-------
+21/42/2021 23:42:28
+-------
+
+
+-------
+21/42/2021 23:42:39
+-------
+
+
+-------
+22/17/2021 12:17:34
+-------
+
+
+-------
+22/17/2021 12:17:42
+-------
+
+
+-------
+22/17/2021 12:17:49
+-------
+
+
+-------
+22/22/2021 12:22:38
+-------
+
+
+-------
+22/22/2021 12:22:43
+-------
+
+
+-------
+22/22/2021 12:22:50
+-------
+
+
+-------
+22/32/2021 12:32:33
+-------
+
+
+-------
+22/33/2021 12:33:23
+-------
+
+
+-------
+22/33/2021 12:33:32
+-------
+
+
+-------
+22/15/2021 14:15:29
+-------
+
+
+-------
+22/15/2021 14:15:38
+-------
+
+
+-------
+22/15/2021 14:15:46
+-------
+
+
+-------
+22/28/2021 14:28:28
+-------
+
+
+-------
+22/28/2021 14:28:36
+-------
+
+
+-------
+22/29/2021 14:29:24
+-------
+
+
+-------
+22/29/2021 14:29:28
+-------
+
+
+-------
+22/29/2021 14:29:33
+-------
+
+
+-------
+22/03/2021 15:03:35
+-------
+
+
+-------
+22/03/2021 15:03:42
+-------
+
+
+-------
+22/03/2021 15:03:51
+-------
+
+
+-------
+22/14/2021 15:14:51
+-------
+
+
+-------
+22/14/2021 15:14:57
+-------
+
+
+-------
+22/15/2021 15:15:03
+-------
+
+
+-------
+22/18/2021 15:18:11
+-------
+
+
+-------
+22/18/2021 15:18:18
+-------
+
+
+-------
+22/18/2021 15:18:25
+-------
+
+
+-------
+22/21/2021 15:21:23
+-------
+
+
+-------
+22/21/2021 15:21:28
+-------
+
+
+-------
+22/21/2021 15:21:34
+-------
+
+
+-------
+22/23/2021 15:23:33
+-------
+
+
+-------
+22/23/2021 15:23:39
+-------
+
+
+-------
+22/23/2021 15:23:45
+-------
+
+
+-------
+22/49/2021 15:49:34
+-------
+
+
+-------
+22/49/2021 15:49:53
+-------
+
+
+-------
+22/50/2021 15:50:05
+-------
+
+
+-------
+22/53/2021 15:53:56
+-------
+
+
+-------
+22/54/2021 15:54:03
+-------
+
+
+-------
+22/54/2021 15:54:14
+-------
+
+
+-------
+22/09/2021 16:09:27
+-------
+
+
+-------
+22/09/2021 16:09:35
+-------
+
+
+-------
+22/09/2021 16:09:43
+-------
+
+
+-------
+23/40/2021 14:40:01
+-------
+
+
+-------
+23/40/2021 14:40:56
+-------
+
+
+-------
+23/41/2021 14:41:14
+-------
+
+
+-------
+23/16/2021 16:16:39
+-------
+
+
+-------
+23/17/2021 16:17:02
+-------
+
+
+-------
+23/17/2021 16:17:15
+-------
+
+
+-------
+23/37/2021 16:37:18
+-------
+
+
+-------
+23/37/2021 16:37:35
+-------
+
+
+-------
+23/37/2021 16:37:47
+-------
+
+
+-------
+23/43/2021 16:43:17
+-------
+
+
+-------
+23/43/2021 16:43:28
+-------
+
+
+-------
+23/43/2021 16:43:41
+-------
+
+
+-------
+23/10/2021 17:10:21
+-------
+
+
+-------
+23/11/2021 17:11:06
+-------
+
+
+-------
+23/31/2021 17:31:55
+-------
+
+Error executing 'DROP TABLE administrador CASCADE CONSTRAINTS ' (line 2): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE artigo CASCADE CONSTRAINTS ' (line 3): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE conta CASCADE CONSTRAINTS ' (line 5): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE drone CASCADE CONSTRAINTS ' (line 6): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE encomenda CASCADE CONSTRAINTS ' (line 7): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE encomendaInterna CASCADE CONSTRAINTS ' (line 8): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE entrega CASCADE CONSTRAINTS ' (line 9): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE estado_encomenda CASCADE CONSTRAINTS ' (line 10): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE estado_veiculo CASCADE CONSTRAINTS ' (line 11): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE estafeta CASCADE CONSTRAINTS ' (line 12): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE farmacia CASCADE CONSTRAINTS ' (line 13): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE farmacia_parque CASCADE CONSTRAINTS ' (line 14): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE guiaTransporte CASCADE CONSTRAINTS ' (line 17): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE lugar_estacionamento CASCADE CONSTRAINTS ' (line 19): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE modelo_drone CASCADE CONSTRAINTS ' (line 20): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE modelo_scooter CASCADE CONSTRAINTS ' (line 21): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE notaEncomenda CASCADE CONSTRAINTS ' (line 23): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE parque CASCADE CONSTRAINTS ' (line 25): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_artigo_farmacia CASCADE CONSTRAINTS ' (line 26): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_encomenda_artigo CASCADE CONSTRAINTS ' (line 27): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_encomenda_conta CASCADE CONSTRAINTS ' (line 28): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_encomendaInterna_artigo CASCADE CONSTRAINTS ' (line 29): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_estafeta_veiculo_entrega_encomenda CASCADE CONSTRAINTS ' (line 30): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_farmacia_encomendaInterna CASCADE CONSTRAINTS ' (line 31): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_funcionario_farmacia CASCADE CONSTRAINTS ' (line 32): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE r_veiculo_lugarEstacionamento CASCADE CONSTRAINTS ' (line 33): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE scooter CASCADE CONSTRAINTS ' (line 34): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE spotCarregamento CASCADE CONSTRAINTS ' (line 35): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE tipo_bateria CASCADE CONSTRAINTS ' (line 36): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE tipo_disponibilidade CASCADE CONSTRAINTS ' (line 37): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE tipo_Estacionamento CASCADE CONSTRAINTS ' (line 38): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE tipo_mochila CASCADE CONSTRAINTS ' (line 40): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE tipo_parque CASCADE CONSTRAINTS ' (line 41): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE tipo_veiculo CASCADE CONSTRAINTS ' (line 42): ORA-00942: tabela ou visualização não existe
+
+Error executing 'DROP TABLE veiculo CASCADE CONSTRAINTS ' (line 43): ORA-00942: tabela ou visualização não existe
+
+
+-------
+23/32/2021 17:32:07
+-------
+
+
+-------
+23/13/2021 18:13:20
+-------
+
+
+-------
+23/13/2021 18:13:30
+-------
+
+
+-------
+23/13/2021 18:13:47
+-------
+
+Error executing '' (line 357): não é possível que a instrução de SQL para execução esteja vazia ou seja nula
+
+-------
+23/37/2021 23:37:18
+-------
+
+Error executing '' (line 372): não é possível que a instrução de SQL para execução esteja vazia ou seja nula
+
+-------
+23/42/2021 23:42:24
+-------
+
+Error executing '' (line 372): não é possível que a instrução de SQL para execução esteja vazia ou seja nula
+
+-------
+23/48/2021 23:48:04
+-------
+
+Error executing '' (line 372): não é possível que a instrução de SQL para execução esteja vazia ou seja nula
+
+-------
+23/58/2021 23:58:55
+-------
+
+
+-------
+23/59/2021 23:59:09
+-------
+
+Error executing '' (line 372): não é possível que a instrução de SQL para execução esteja vazia ou seja nula
+
+-------
+24/04/2021 00:04:11
+-------
+
+Error executing 'CREATE TABLE administrador (id_administrador number(10) GENERATED AS IDENTITY, nome nvarchar2(255) NOT NULL, password varchar2(255) NOT NULL, email nvarchar2(255) NOT NULL, PRIMARY KEY (id_administrador)) ' (line 3): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE artigo (id_artigo number(10) GENERATED AS IDENTITY, designacao varchar2(255) NOT NULL, precoUnitario number(19, 2) NOT NULL, iva number(10) NOT NULL, peso number(19, 2) NOT NULL, PRIMARY KEY (id_artigo)) ' (line 4): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE cliente (id_cliente number(10) GENERATED AS IDENTITY, nome varchar2(255) NOT NULL, NIF number(10) NOT NULL UNIQUE, id_endreco number(10) NOT NULL, email varchar2(255) NOT NULL, cartaoCredito number(10) NOT NULL, PRIMARY KEY (id_cliente)) ' (line 5): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE conta (id_cliente number(10) NOT NULL, password varchar2(255) NOT NULL, credito number(19, 2) DEFAULT 0 NOT NULL, id_farmaciaMaisProxima number(10) NOT NULL, PRIMARY KEY (id_cliente)) ' (line 6): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE drone (id_drone number(10) NOT NULL, numRegisto number(10) NOT NULL UNIQUE, id_modelo number(10) NOT NULL, id_tipoBateria number(10) NOT NULL, id_estado number(10) NOT NULL, capacidade_atual number(10) NOT NULL, PRIMARY KEY (id_drone)) ' (line 7): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE encomenda (id_encomenda number(10) GENERATED AS IDENTITY, data_encomenda date NOT NULL, id_estadoEncomenda number(10) NOT NULL, PRIMARY KEY (id_encomenda)) ' (line 8): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE encomendaInterna (id_encomendaInterna number(10) GENERATED AS IDENTITY, data timestamp(0) NOT NULL, id_farmaciaForncecedor number(10) NOT NULL, PRIMARY KEY (id_encomendaInterna)) ' (line 9): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE entrega (id_entrega number(10) GENERATED AS IDENTITY, dataInicio timestamp(0) NOT NULL, dataFim timestamp(0), PRIMARY KEY (id_entrega)) ' (line 10): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE estado_encomenda (id_estadoEncomenda number(10) GENERATED AS IDENTITY, designacao varchar2(255) NOT NULL, PRIMARY KEY (id_estadoEncomenda)) ' (line 11): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE estado_veiculo (id_estadoVeiculo number(10) GENERATED AS IDENTITY, designacao varchar2(255) NOT NULL, PRIMARY KEY (id_estadoVeiculo)) ' (line 12): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE estafeta (id_funcionario number(10) NOT NULL, peso number(10) NOT NULL, id_tipoMochila number(10) NOT NULL, id_tipoDisponibilidade number(10) NOT NULL, id_scooterPreferencial number(10), password varchar2(255) NOT NULL, PRIMARY KEY (id_funcionario)) ' (line 13): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE farmacia (id_farmacia number(10) GENERATED AS IDENTITY, NIPC number(10) NOT NULL UNIQUE, id_endereco number(10) NOT NULL, designacao varchar2(255) NOT NULL, PRIMARY KEY (id_farmacia)) ' (line 14): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE farmacia_parque (id_farmacia number(10) NOT NULL, id_parque number(10) NOT NULL, PRIMARY KEY (id_farmacia, id_parque)) ' (line 15): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE fatura (id_fatura number(10) GENERATED AS IDENTITY, numero number(10) NOT NULL UNIQUE, data date NOT NULL, id_encomenda number(10) NOT NULL, valorFaturado number(19, 2) NOT NULL, valorTransporte number(19, 2) NOT NULL, valorDescontado number(19, 2) NOT NULL, PRIMARY KEY (id_fatura)) ' (line 16): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE funcionario (id_funcionario number(10) GENERATED AS IDENTITY, nome varchar2(255) NOT NULL, NIF number(10) NOT NULL, NISS number(10) NOT NULL, email varchar2(255) NOT NULL, id_endreco number(10) NOT NULL, id_tipoFuncionario number(10) NOT NULL, PRIMARY KEY (id_funcionario)) ' (line 17): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE guiaTransporte (id_guiaTransporte number(10) GENERATED AS IDENTITY, id_encomendaInterna number(10) NOT NULL, PRIMARY KEY (id_guiaTransporte)) ' (line 18): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE localidade (id_localidade number(10) GENERATED AS IDENTITY, designacao varchar2(255) NOT NULL, latitude number(19, 7) NOT NULL, longitude number(19, 7) NOT NULL, altitude number(10, 2) NOT NULL, PRIMARY KEY (id_localidade)) ' (line 19): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE lugar_estacionamento (id_lugarEstacionamento number(10) GENERATED AS IDENTITY, id_tipoEstacionamento number(10) NOT NULL, id_parque number(10) NOT NULL, PRIMARY KEY (id_lugarEstacionamento)) ' (line 20): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE modelo_drone (id_modeloDrone number(10) GENERATED AS IDENTITY, designacao varchar2(255) NOT NULL, peso number(19, 2) NOT NULL, cargaMaxima number(10) NOT NULL, PRIMARY KEY (id_modeloDrone)) ' (line 21): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE modelo_scooter (id_modeloScooter number(10) GENERATED AS IDENTITY, designacao varchar2(255) NOT NULL, peso number(19, 2) NOT NULL, areaFrontal number(19, 2) NOT NULL, capacidadeMotor number(19, 2) NOT NULL, PRIMARY KEY (id_modeloScooter)) ' (line 22): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE modo_pagamento (id_modoPagamento number(10) GENERATED AS IDENTITY, designacao varchar2(255) NOT NULL, PRIMARY KEY (id_modoPagamento)) ' (line 23): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE notaEncomenda (id_notaEncomenda number(10) GENERATED AS IDENTITY, id_encomendaInterna number(10) NOT NULL, PRIMARY KEY (id_notaEncomenda)) ' (line 24): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE pagamento (id_fatura number(10) NOT NULL, id_modoPagamento number(10) NOT NULL, valorTotalFaturado number(19, 2), PRIMARY KEY (id_fatura, id_modoPagamento)) ' (line 25): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE parque (id_parque number(10) GENERATED AS IDENTITY, id_tipoParque number(10) NOT NULL, numLugaresEstacionamentoNormal number(10) DEFAULT 0 NOT NULL, NumPostoCarregamento number(10) DEFAULT 0 NOT NULL, id_endereco number(10) NOT NULL, capacidadeTensao number(10) NOT NULL, PRIMARY KEY (id_parque)) ' (line 26): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE r_artigo_farmacia (id_artigo number(10) NOT NULL, id_farmacia number(10) NOT NULL, stock number(10) NOT NULL, PRIMARY KEY (id_artigo, id_farmacia)) ' (line 27): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE r_encomenda_artigo (id_encomenda number(10) NOT NULL, linha number(10) NOT NULL, id_artigo number(10) NOT NULL, quantidade number(10) NOT NULL, PRIMARY KEY (id_encomenda, linha, id_artigo)) ' (line 28): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE r_encomenda_conta (id_encomenda number(10) NOT NULL, id_cliente number(10) NOT NULL, PRIMARY KEY (id_encomenda, id_cliente)) ' (line 29): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE r_encomendaInterna_artigo (id_encomendaInterna number(10) NOT NULL, id_artigo number(10) NOT NULL, linha number(10) NOT NULL, quantidade number(10) NOT NULL, PRIMARY KEY (id_encomendaInterna, id_artigo, linha)) ' (line 30): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE r_estafeta_veiculo_entrega_encomenda (id_veiculo number(10) NOT NULL, id_entrega number(10) NOT NULL, id_estafeta number(10), id_encomenda number(10) NOT NULL, PRIMARY KEY (id_veiculo, id_entrega, id_encomenda)) ' (line 31): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE r_farmacia_encomendaInterna (id_farmacia number(10) NOT NULL, id_encomendaInterna number(10) NOT NULL, PRIMARY KEY (id_farmacia, id_encomendaInterna)) ' (line 32): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE r_funcionario_farmacia (id_funcionario number(10) NOT NULL, id_farmacia number(10) NOT NULL, PRIMARY KEY (id_funcionario, id_farmacia)) ' (line 33): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE r_veiculo_lugarEstacionamento (id_veiculo number(10) NOT NULL, id_lugarEstacionamento number(10) NOT NULL, data_inicio timestamp(0) NOT NULL, data_fim timestamp(0), PRIMARY KEY (id_veiculo, id_lugarEstacionamento, data_inicio)) ' (line 34): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE scooter (id_scooter number(10) NOT NULL, matricula varchar2(255) NOT NULL UNIQUE, id_modelo number(10) NOT NULL, id_tipoBateria number(10) NOT NULL, id_estado number(10) NOT NULL, capacidade_atual number(19, 2) NOT NULL, PRIMARY KEY (id_scooter)) ' (line 35): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE spotCarregamento (id_lugarEstacionamento number(10) NOT NULL, output_energetico number(10) DEFAULT 0 NOT NULL, PRIMARY KEY (id_lugarEstacionamento)) ' (line 36): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE tipo_bateria (id_tipoBateria number(10) GENERATED AS IDENTITY, designacao varchar2(255) NOT NULL, capacidade number(10) NOT NULL, eficiencia number(10) NOT NULL, PRIMARY KEY (id_tipoBateria)) ' (line 37): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE tipo_disponibilidade (id_tipoDisponibilidade number(10) GENERATED AS IDENTITY, designacao varchar2(255) NOT NULL, PRIMARY KEY (id_tipoDisponibilidade)) ' (line 38): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE tipo_Estacionamento (id_tipoEstacionamento number(10) GENERATED AS IDENTITY, designacao varchar2(255) NOT NULL, PRIMARY KEY (id_tipoEstacionamento)) ' (line 39): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE tipo_funcionario (id_tipoFuncionario number(10) GENERATED AS IDENTITY, designacao varchar2(255) NOT NULL, PRIMARY KEY (id_tipoFuncionario)) ' (line 40): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE tipo_mochila (id_tipoMochila number(10) GENERATED AS IDENTITY, cargaMaxima number(19, 2) NOT NULL, designacao varchar2(255) NOT NULL, PRIMARY KEY (id_tipoMochila)) ' (line 41): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE tipo_parque (id_tipoParque number(10) GENERATED AS IDENTITY, designacao varchar2(255) NOT NULL, PRIMARY KEY (id_tipoParque)) ' (line 42): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE tipo_veiculo (id_tipoVeiculo number(10) GENERATED AS IDENTITY, designacao varchar2(255) NOT NULL, PRIMARY KEY (id_tipoVeiculo)) ' (line 43): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE veiculo (id_veiculo number(10) GENERATED AS IDENTITY, id_tipoVeiculo number(10) NOT NULL, id_farmacia number(10) NOT NULL, PRIMARY KEY (id_veiculo)) ' (line 44): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'ALTER TABLE drone ADD CONSTRAINT FKdrone773708 FOREIGN KEY (id_tipoBateria) REFERENCES tipo_bateria (id_tipoBateria) ' (line 45): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_funcionario_farmacia ADD CONSTRAINT FKr_funciona676876 FOREIGN KEY (id_farmacia) REFERENCES farmacia (id_farmacia) ' (line 46): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_funcionario_farmacia ADD CONSTRAINT FKr_funciona68731 FOREIGN KEY (id_funcionario) REFERENCES funcionario (id_funcionario) ' (line 47): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE guiaTransporte ADD CONSTRAINT FKguiaTransp126485 FOREIGN KEY (id_encomendaInterna) REFERENCES encomendaInterna (id_encomendaInterna) ' (line 48): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE notaEncomenda ADD CONSTRAINT FKnotaEncome937065 FOREIGN KEY (id_encomendaInterna) REFERENCES encomendaInterna (id_encomendaInterna) ' (line 49): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_encomendaInterna_artigo ADD CONSTRAINT FKr_encomend860796 FOREIGN KEY (id_encomendaInterna) REFERENCES encomendaInterna (id_encomendaInterna) ' (line 50): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_encomendaInterna_artigo ADD CONSTRAINT FKr_encomend510677 FOREIGN KEY (id_artigo) REFERENCES artigo (id_artigo) ' (line 51): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_farmacia_encomendaInterna ADD CONSTRAINT FKr_farmacia383112 FOREIGN KEY (id_encomendaInterna) REFERENCES encomendaInterna (id_encomendaInterna) ' (line 52): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_farmacia_encomendaInterna ADD CONSTRAINT FKr_farmacia909341 FOREIGN KEY (id_farmacia) REFERENCES farmacia (id_farmacia) ' (line 53): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE lugar_estacionamento ADD CONSTRAINT FKlugar_esta710242 FOREIGN KEY (id_parque) REFERENCES parque (id_parque) ' (line 54): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE spotCarregamento ADD CONSTRAINT FKspotCarreg916377 FOREIGN KEY (id_lugarEstacionamento) REFERENCES lugar_estacionamento (id_lugarEstacionamento) ' (line 55): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE veiculo ADD CONSTRAINT FKveiculo17877 FOREIGN KEY (id_farmacia) REFERENCES farmacia (id_farmacia) ' (line 56): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE farmacia_parque ADD CONSTRAINT FKfarmacia_p166214 FOREIGN KEY (id_farmacia) REFERENCES farmacia (id_farmacia) ' (line 57): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE farmacia_parque ADD CONSTRAINT FKfarmacia_p848617 FOREIGN KEY (id_parque) REFERENCES parque (id_parque) ' (line 58): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_encomenda_conta ADD CONSTRAINT FKr_encomend72424 FOREIGN KEY (id_cliente) REFERENCES conta (id_cliente) ' (line 59): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE drone ADD CONSTRAINT FKdrone119041 FOREIGN KEY (id_modelo) REFERENCES modelo_drone (id_modeloDrone) ' (line 60): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE drone ADD CONSTRAINT FKdrone537844 FOREIGN KEY (id_estado) REFERENCES estado_veiculo (id_estadoVeiculo) ' (line 61): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_estafeta_veiculo_entrega_encomenda ADD CONSTRAINT FKr_estafeta577865 FOREIGN KEY (id_veiculo) REFERENCES veiculo (id_veiculo) ' (line 62): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE scooter ADD CONSTRAINT FKscooter228628 FOREIGN KEY (id_scooter) REFERENCES veiculo (id_veiculo) ' (line 63): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE drone ADD CONSTRAINT FKdrone950293 FOREIGN KEY (id_drone) REFERENCES veiculo (id_veiculo) ' (line 64): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_veiculo_lugarEstacionamento ADD CONSTRAINT FKr_veiculo_441205 FOREIGN KEY (id_veiculo) REFERENCES veiculo (id_veiculo) ' (line 65): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE veiculo ADD CONSTRAINT FKveiculo705797 FOREIGN KEY (id_tipoVeiculo) REFERENCES tipo_veiculo (id_tipoVeiculo) ' (line 66): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE conta ADD CONSTRAINT FKconta624793 FOREIGN KEY (id_farmaciaMaisProxima) REFERENCES farmacia (id_farmacia) ' (line 67): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE parque ADD CONSTRAINT FKparque223875 FOREIGN KEY (id_tipoParque) REFERENCES tipo_parque (id_tipoParque) ' (line 68): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE funcionario ADD CONSTRAINT FKfuncionari449166 FOREIGN KEY (id_endreco) REFERENCES localidade (id_localidade) ' (line 69): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE funcionario ADD CONSTRAINT FKfuncionari624859 FOREIGN KEY (id_tipoFuncionario) REFERENCES tipo_funcionario (id_tipoFuncionario) ' (line 70): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE estafeta ADD CONSTRAINT FKestafeta477595 FOREIGN KEY (id_funcionario) REFERENCES funcionario (id_funcionario) ' (line 71): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_veiculo_lugarEstacionamento ADD CONSTRAINT FKr_veiculo_907614 FOREIGN KEY (id_lugarEstacionamento) REFERENCES lugar_estacionamento (id_lugarEstacionamento) ' (line 72): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE lugar_estacionamento ADD CONSTRAINT FKlugar_esta963847 FOREIGN KEY (id_tipoEstacionamento) REFERENCES tipo_Estacionamento (id_tipoEstacionamento) ' (line 73): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_artigo_farmacia ADD CONSTRAINT FKr_artigo_f671876 FOREIGN KEY (id_farmacia) REFERENCES farmacia (id_farmacia) ' (line 74): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_artigo_farmacia ADD CONSTRAINT FKr_artigo_f402010 FOREIGN KEY (id_artigo) REFERENCES artigo (id_artigo) ' (line 75): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE encomenda ADD CONSTRAINT FKencomenda366107 FOREIGN KEY (id_estadoEncomenda) REFERENCES estado_encomenda (id_estadoEncomenda) ' (line 76): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE pagamento ADD CONSTRAINT FKpagamento108141 FOREIGN KEY (id_modoPagamento) REFERENCES modo_pagamento (id_modoPagamento) ' (line 77): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE pagamento ADD CONSTRAINT FKpagamento272182 FOREIGN KEY (id_fatura) REFERENCES fatura (id_fatura) ' (line 78): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE estafeta ADD CONSTRAINT FKestafeta819080 FOREIGN KEY (id_tipoDisponibilidade) REFERENCES tipo_disponibilidade (id_tipoDisponibilidade) ' (line 79): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_estafeta_veiculo_entrega_encomenda ADD CONSTRAINT FKr_estafeta382457 FOREIGN KEY (id_encomenda) REFERENCES encomenda (id_encomenda) ' (line 80): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_estafeta_veiculo_entrega_encomenda ADD CONSTRAINT FKr_estafeta836914 FOREIGN KEY (id_entrega) REFERENCES entrega (id_entrega) ' (line 81): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_estafeta_veiculo_entrega_encomenda ADD CONSTRAINT FKr_estafeta96586 FOREIGN KEY (id_estafeta) REFERENCES estafeta (id_funcionario) ' (line 82): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_encomenda_artigo ADD CONSTRAINT FKr_encomend727726 FOREIGN KEY (id_artigo) REFERENCES artigo (id_artigo) ' (line 83): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_encomenda_artigo ADD CONSTRAINT FKr_encomend842900 FOREIGN KEY (id_encomenda) REFERENCES encomenda (id_encomenda) ' (line 84): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_encomenda_conta ADD CONSTRAINT FKr_encomend505505 FOREIGN KEY (id_encomenda) REFERENCES encomenda (id_encomenda) ' (line 85): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE conta ADD CONSTRAINT FKconta681167 FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente) ' (line 86): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE cliente ADD CONSTRAINT FKcliente656967 FOREIGN KEY (id_endreco) REFERENCES localidade (id_localidade) ' (line 87): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE fatura ADD CONSTRAINT FKfatura478275 FOREIGN KEY (id_encomenda) REFERENCES encomenda (id_encomenda) ' (line 88): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE scooter ADD CONSTRAINT FKscooter472857 FOREIGN KEY (id_modelo) REFERENCES modelo_scooter (id_modeloScooter) ' (line 89): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE estafeta ADD CONSTRAINT FKestafeta40706 FOREIGN KEY (id_tipoMochila) REFERENCES tipo_mochila (id_tipoMochila) ' (line 90): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE scooter ADD CONSTRAINT FKscooter532040 FOREIGN KEY (id_estado) REFERENCES estado_veiculo (id_estadoVeiculo) ' (line 91): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE scooter ADD CONSTRAINT FKscooter127997 FOREIGN KEY (id_tipoBateria) REFERENCES tipo_bateria (id_tipoBateria) ' (line 92): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+
+-------
+24/04/2021 00:04:56
+-------
+
+
+-------
+24/05/2021 00:05:11
+-------
+
+
+-------
+24/05/2021 00:05:22
+-------
+
+Error executing '' (line 234): não é possível que a instrução de SQL para execução esteja vazia ou seja nula
+
+-------
+24/43/2021 09:43:06
+-------
+
+
+-------
+24/43/2021 09:43:11
+-------
+
+
+-------
+24/43/2021 09:43:17
+-------
+
+Error executing '' (line 201): não é possível que a instrução de SQL para execução esteja vazia ou seja nula
+
+-------
+24/50/2021 09:50:37
+-------
+
+
+-------
+24/50/2021 09:50:42
+-------
+
+
+-------
+24/50/2021 09:50:49
+-------
+
+Error executing 'INSERT INTO administrador(nome, password, email)VALUES('Andreia Silva', '123', 'admin@farmacia.com') ' (line 121): ORA-00904: "EMAIL": identificador inválido
+
+
+-------
+24/06/2021 10:06:04
+-------
+
+
+-------
+24/06/2021 10:06:08
+-------
+
+
+-------
+24/06/2021 10:06:13
+-------
+
+Error executing 'INSERT INTO administrador(nome, password, email)VALUES('Andreia Silva', '123', 'admin@farmacia.com') ' (line 121): ORA-00904: "EMAIL": identificador inválido
+
+
+-------
+24/07/2021 10:07:54
+-------
+
+
+-------
+24/07/2021 10:07:58
+-------
+
+
+-------
+24/08/2021 10:08:03
+-------
+
+Error executing 'INSERT INTO administrador(nome, password, email)VALUES('Andreia Silva', '123', 'admin@farmacia.com') ' (line 121): ORA-00904: "EMAIL": identificador inválido
+
+
+-------
+24/19/2021 10:19:21
+-------
+
+
+-------
+24/19/2021 10:19:27
+-------
+
+
+-------
+24/19/2021 10:19:32
+-------
+
+Error executing 'INSERT INTO administrador(nome, password, email)VALUES('Andreia Silva', '123', 'admin') ' (line 121): ORA-00904: "EMAIL": identificador inválido
+
+
+-------
+24/24/2021 10:24:43
+-------
+
+
+-------
+24/24/2021 10:24:49
+-------
+
+
+-------
+24/24/2021 10:24:54
+-------
+
+
+-------
+24/48/2021 10:48:26
+-------
+
+
+-------
+24/48/2021 10:48:34
+-------
+
+
+-------
+24/48/2021 10:48:43
+-------
+
+
+-------
+25/13/2021 00:13:34
+-------
+
+
+-------
+25/13/2021 00:13:51
+-------
+
+
+-------
+25/14/2021 00:14:01
+-------
+
+
+-------
+25/22/2021 15:22:50
+-------
+
+
+-------
+25/23/2021 15:23:34
+-------
+
+
+-------
+25/23/2021 15:23:50
+-------
+
+
+-------
+25/33/2021 15:33:51
+-------
+
+
+-------
+25/34/2021 15:34:00
+-------
+
+
+-------
+25/34/2021 15:34:06
+-------
+
+
+-------
+25/40/2021 15:40:43
+-------
+
+
+-------
+25/41/2021 15:41:04
+-------
+
+
+-------
+25/41/2021 15:41:13
+-------
+
+
+-------
+25/47/2021 15:47:30
+-------
+
+
+-------
+25/47/2021 15:47:53
+-------
+
+
+-------
+25/47/2021 15:47:59
+-------
+
+
+-------
+25/18/2021 16:18:10
+-------
+
+
+-------
+25/18/2021 16:18:40
+-------
+
+
+-------
+25/18/2021 16:18:56
+-------
+
+
+-------
+25/27/2021 16:27:57
+-------
+
+
+-------
+25/28/2021 16:28:21
+-------
+
+
+-------
+25/28/2021 16:28:33
+-------
+
+
+-------
+25/30/2021 16:30:49
+-------
+
+
+-------
+25/03/2021 18:03:51
+-------
+
+
+-------
+25/03/2021 18:03:59
+-------
+
+
+-------
+25/04/2021 18:04:07
+-------
+
+
+-------
+25/08/2021 18:08:33
+-------
+
+
+-------
+25/08/2021 18:08:41
+-------
+
+
+-------
+25/08/2021 18:08:46
+-------
+
+
+-------
+25/35/2021 18:35:17
+-------
+
+
+-------
+25/35/2021 18:35:36
+-------
+
+
+-------
+25/35/2021 18:35:50
+-------
+
+
+-------
+25/23/2021 20:23:53
+-------
+
+
+-------
+25/24/2021 20:24:03
+-------
+
+
+-------
+25/24/2021 20:24:10
+-------
+
+
+-------
+25/29/2021 20:29:16
+-------
+
+
+-------
+25/29/2021 20:29:33
+-------
+
+
+-------
+25/32/2021 20:32:31
+-------
+
+
+-------
+25/32/2021 20:32:38
+-------
+
+
+-------
+25/32/2021 20:32:48
+-------
+
+
+-------
+25/40/2021 21:40:25
+-------
+
+
+-------
+25/40/2021 21:40:52
+-------
+
+
+-------
+25/41/2021 21:41:00
+-------
+
+
+-------
+26/01/2021 11:01:46
+-------
+
+
+-------
+26/02/2021 11:02:05
+-------
+
+
+-------
+26/02/2021 11:02:13
+-------
+
+
+-------
+26/07/2021 11:07:24
+-------
+
+
+-------
+26/07/2021 11:07:33
+-------
+
+
+-------
+26/07/2021 11:07:39
+-------
+
+
+-------
+26/16/2021 11:16:31
+-------
+
+
+-------
+26/16/2021 11:16:37
+-------
+
+
+-------
+26/16/2021 11:16:42
+-------
+
+
+-------
+26/04/2021 16:04:05
+-------
+
+
+-------
+26/05/2021 16:05:22
+-------
+
+
+-------
+26/05/2021 16:05:35
+-------
+
+
+-------
+26/21/2021 16:21:50
+-------
+
+Error executing 'DROP TABLE cliente CASCADE CONSTRAINTS ' (line 4): ORA-00054: aquisição de recurso ocupado com NOWAIT especificado ou tempo de espera esgotado
+
+Error executing 'DROP TABLE farmacia CASCADE CONSTRAINTS ' (line 13): ORA-00054: aquisição de recurso ocupado com NOWAIT especificado ou tempo de espera esgotado
+
+Error executing 'DROP TABLE farmacia_parque CASCADE CONSTRAINTS ' (line 14): ORA-00054: aquisição de recurso ocupado com NOWAIT especificado ou tempo de espera esgotado
+
+Error executing 'DROP TABLE funcionario CASCADE CONSTRAINTS ' (line 16): ORA-00054: aquisição de recurso ocupado com NOWAIT especificado ou tempo de espera esgotado
+
+Error executing 'DROP TABLE localidade CASCADE CONSTRAINTS ' (line 18): ORA-00054: aquisição de recurso ocupado com NOWAIT especificado ou tempo de espera esgotado
+
+Error executing 'DROP TABLE lugar_estacionamento CASCADE CONSTRAINTS ' (line 19): ORA-00054: aquisição de recurso ocupado com NOWAIT especificado ou tempo de espera esgotado
+
+Error executing 'DROP TABLE parque CASCADE CONSTRAINTS ' (line 25): ORA-00054: aquisição de recurso ocupado com NOWAIT especificado ou tempo de espera esgotado
+
+Error executing 'DROP TABLE r_veiculo_lugarEstacionamento CASCADE CONSTRAINTS ' (line 33): ORA-00054: aquisição de recurso ocupado com NOWAIT especificado ou tempo de espera esgotado
+
+Error executing 'DROP TABLE spotCarregamento CASCADE CONSTRAINTS ' (line 35): ORA-00054: aquisição de recurso ocupado com NOWAIT especificado ou tempo de espera esgotado
+
+
+-------
+26/22/2021 16:22:16
+-------
+
+Error executing 'CREATE TABLE cliente (id_cliente number(10) GENERATED AS IDENTITY, nome varchar2(255) NOT NULL, NIF number(10) NOT NULL UNIQUE, id_endreco number(10) NOT NULL, email varchar2(255) NOT NULL, cartaoCredito number(10) NOT NULL, PRIMARY KEY (id_cliente)) ' (line 4): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE farmacia (id_farmacia number(10) GENERATED AS IDENTITY, NIPC number(10) NOT NULL UNIQUE, id_endereco number(10) NOT NULL, designacao varchar2(255) NOT NULL, PRIMARY KEY (id_farmacia)) ' (line 13): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE farmacia_parque (id_farmacia number(10) NOT NULL, id_parque number(10) NOT NULL, PRIMARY KEY (id_farmacia, id_parque)) ' (line 14): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE funcionario (id_funcionario number(10) GENERATED AS IDENTITY, nome varchar2(255) NOT NULL, NIF number(10) NOT NULL, NISS number(10) NOT NULL, email varchar2(255) NOT NULL, id_endreco number(10) NOT NULL, id_tipoFuncionario number(10) NOT NULL, PRIMARY KEY (id_funcionario)) ' (line 16): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE localidade (id_localidade number(10) GENERATED AS IDENTITY, designacao varchar2(255) NOT NULL, latitude number(19, 7) NOT NULL, longitude number(19, 7) NOT NULL, altitude number(10, 2) NOT NULL, PRIMARY KEY (id_localidade)) ' (line 18): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE lugar_estacionamento (id_lugarEstacionamento number(10) GENERATED AS IDENTITY, id_tipoEstacionamento number(10) NOT NULL, id_parque number(10) NOT NULL, PRIMARY KEY (id_lugarEstacionamento)) ' (line 19): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE parque (id_parque number(10) GENERATED AS IDENTITY, id_tipoParque number(10) NOT NULL, numLugaresEstacionamentoNormal number(10) DEFAULT 0 NOT NULL, NumPostoCarregamento number(10) DEFAULT 0 NOT NULL, id_endereco number(10) NOT NULL, capacidadeTensao number(10) NOT NULL, PRIMARY KEY (id_parque)) ' (line 25): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE r_veiculo_lugarEstacionamento (id_veiculo number(10) NOT NULL, id_lugarEstacionamento number(10) NOT NULL, data_inicio timestamp(0) NOT NULL, data_fim timestamp(0), PRIMARY KEY (id_veiculo, id_lugarEstacionamento, data_inicio)) ' (line 33): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'CREATE TABLE spotCarregamento (id_lugarEstacionamento number(10) NOT NULL, output_energetico number(10) DEFAULT 0 NOT NULL, PRIMARY KEY (id_lugarEstacionamento)) ' (line 35): ORA-00955: o nome já está a ser utilizado por um objeto existente
+
+Error executing 'ALTER TABLE lugar_estacionamento ADD CONSTRAINT FKlugar_esta710242 FOREIGN KEY (id_parque) REFERENCES parque (id_parque) ' (line 53): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE spotCarregamento ADD CONSTRAINT FKspotCarreg916377 FOREIGN KEY (id_lugarEstacionamento) REFERENCES lugar_estacionamento (id_lugarEstacionamento) ' (line 54): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE farmacia_parque ADD CONSTRAINT FKfarmacia_p166214 FOREIGN KEY (id_farmacia) REFERENCES farmacia (id_farmacia) ' (line 56): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE farmacia_parque ADD CONSTRAINT FKfarmacia_p848617 FOREIGN KEY (id_parque) REFERENCES parque (id_parque) ' (line 57): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE parque ADD CONSTRAINT FKparque223875 FOREIGN KEY (id_tipoParque) REFERENCES tipo_parque (id_tipoParque) ' (line 67): ORA-02298: não é possível validar (LAPR3_G11.FKPARQUE223875) - chaves pai não encontradas
+
+Error executing 'ALTER TABLE funcionario ADD CONSTRAINT FKfuncionari449166 FOREIGN KEY (id_endreco) REFERENCES localidade (id_localidade) ' (line 68): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE r_veiculo_lugarEstacionamento ADD CONSTRAINT FKr_veiculo_907614 FOREIGN KEY (id_lugarEstacionamento) REFERENCES lugar_estacionamento (id_lugarEstacionamento) ' (line 71): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+Error executing 'ALTER TABLE lugar_estacionamento ADD CONSTRAINT FKlugar_esta963847 FOREIGN KEY (id_tipoEstacionamento) REFERENCES tipo_Estacionamento (id_tipoEstacionamento) ' (line 72): ORA-02298: não é possível validar (LAPR3_G11.FKLUGAR_ESTA963847) - chaves pai não encontradas
+
+Error executing 'ALTER TABLE cliente ADD CONSTRAINT FKcliente656967 FOREIGN KEY (id_endreco) REFERENCES localidade (id_localidade) ' (line 86): ORA-02275: esta restrição de integridade referencial já existe na tabela
+
+
+-------
+26/22/2021 16:22:30
+-------
+
+
+-------
+26/52/2021 16:52:56
+-------
+
+
+-------
+26/53/2021 16:53:51
+-------
+
+
+-------
+26/54/2021 16:54:10
+-------
+
+
+-------
+26/45/2021 17:45:27
+-------
+
+
+-------
+26/47/2021 17:47:02
+-------
+
+
+-------
+26/47/2021 17:47:18
+-------
+
+
+-------
+26/51/2021 17:51:07
+-------
+
+
+-------
+26/51/2021 17:51:19
+-------
+
+
+-------
+26/51/2021 17:51:28
+-------
+
+
+-------
+30/55/2021 17:55:34
+-------
+
+
+-------
+30/55/2021 17:55:40
+-------
+
+
+-------
+30/55/2021 17:55:46
+-------
+
+
+-------
+30/58/2021 17:58:45
+-------
+
+
+-------
+30/58/2021 17:58:49
+-------
+
+
+-------
+30/58/2021 17:58:54
+-------
+
+
+-------
+30/08/2021 18:08:54
+-------
+
+Error executing '' (line 364): não é possível que a instrução de SQL para execução esteja vazia ou seja nula
+
+-------
+30/10/2021 18:10:21
+-------
+
+Error executing '' (line 362): não é possível que a instrução de SQL para execução esteja vazia ou seja nula
+
+-------
+30/11/2021 18:11:12
+-------
+
+
+-------
+30/12/2021 18:12:21
+-------
+
+
+-------
+30/35/2021 19:35:40
+-------
+
+
+-------
+30/35/2021 19:35:54
+-------
+
+
+-------
+30/38/2021 19:38:28
+-------
+
+
+-------
+30/38/2021 19:38:42
+-------
+
+
+-------
+30/43/2021 19:43:00
+-------
+
+
+-------
+30/43/2021 19:43:13
+-------
+
+
+-------
+30/29/2021 23:29:27
+-------
+
+
+-------
+30/29/2021 23:29:39
+-------
+
+
+-------
+30/32/2021 23:32:40
+-------
+
+
+-------
+30/32/2021 23:32:54
+-------
+
+
+-------
+30/33/2021 23:33:18
+-------
+
+
+-------
+31/11/2021 00:11:01
+-------
+
+
+-------
+31/11/2021 00:11:13
+-------
+
+
+-------
+31/11/2021 00:11:40
+-------
+
+
+-------
+31/27/2021 10:27:33
+-------
+
+
+-------
+31/27/2021 10:27:49
+-------
+
+
+-------
+31/28/2021 10:28:39
+-------
+
+
+-------
+31/55/2021 12:55:23
+-------
+
+
+-------
+31/55/2021 12:55:36
+-------
+
+
+-------
+31/56/2021 12:56:08
+-------
+
+
+-------
+31/30/2021 18:30:12
+-------
+
+
+-------
+31/30/2021 18:30:26
+-------
+
+
+-------
+31/31/2021 18:31:02
+-------
+
+
+-------
+31/58/2021 21:58:04
+-------
+
+
+-------
+31/59/2021 21:59:59
+-------
+
+
+-------
+31/01/2021 22:01:21
+-------
+
+
+-------
+31/01/2021 22:01:53
+-------
+
+
+-------
+31/03/2021 22:03:01
+-------
+
+
+-------
+31/09/2021 22:09:57
+-------
+
+
+-------
+31/11/2021 22:11:01
+-------
+
+
+-------
+31/20/2021 22:20:22
+-------
+
+
+-------
+31/21/2021 22:21:15
+-------
+
+
+-------
+31/30/2021 22:30:11
+-------
+
+
+-------
+31/31/2021 22:31:25
+-------
+

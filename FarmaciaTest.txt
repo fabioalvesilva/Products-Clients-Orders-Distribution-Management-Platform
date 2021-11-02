@@ -1,0 +1,2 @@
+
+Farmacia{id=0, descricao=abc, nif=123, endereco=Endereco{rua=, latitude=0.0, longitude=0.0}, idsParqueEstacionamento=[]}

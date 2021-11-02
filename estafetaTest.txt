@@ -1,0 +1,2 @@
+
+Estafeta{id=null, niss=null, pesoMax=null}
